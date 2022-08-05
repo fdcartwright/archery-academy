@@ -9,28 +9,33 @@
 
 <body>
     <header>
-        <div>
-            <a href="tel:2535551010">CALL US (253)555-1010</a>
-            <a href="archery-education@example.com"> archery-education@example.com</a>
+        <div class="header-contact-link">
+            <a href="tel:2535551010">CALL US (253) 555-1010</a>
+            <a href="mailto:archery-education@example.com"> Archery-Education@Example.com</a>
         </div>
-        <img src="images/archeryAcademy-logo-color.png" alt="Archery logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="#">Lessons</a>
-            <a href="#">Contact</a>
-        </nav>
+        <div>
+            <div class="header-img">
+                <img src="images/archeryAcademy-logo-color.png" alt="Archery logo">
+            </div>
+            <nav>
+                <a href="index.html">HOME</a>/
+                <a href="about.html">ABOUT</a>/
+                <a href="#">LESSONS</a>/
+                <a href="#">CONTACT</a>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
-            <h2>Classes</h2>
+        <section class="class-section grid-container">
+            <h2>CLASSES</h2>
+            <div></div>
             <article>
                 <h3>A101 Basic Archery</h3>
                 <p>A101 is a basic archery course that focuses on beginning archery safety, skills, and drills.
                     Participants learn about archery form, range rules and etiquette. Form training and fun games are
-                    introduced in this class. Equipment will be provided with exception of safety kit.</p>
-                <p>$120/month</p>
-                <p>Mondays and Wednesdays, 4-5pm</p>
+                    introduced in this class. Equipment will be provided with exception of safety kit.</p><br>
+                <p>$120/month</p><br>
+                <p>Mondays and Wednesdays, 4-5pm</p><br>
                 <p>Interest in learning about the sport of archery. Minimum age 8 years old or 7 w/ pre-evaluation.</p>
             </article>
             <article>
@@ -38,9 +43,9 @@
                 <p>A102 is an intermediate archery course that focuses on intermediate archery safety, form, and
                     introduces new equipment styles of shooting Recurve and Compound bows. Fun games and form
                     reinforcement techniques are emphasized in this class.
-                    Equipment will be provided with exception of safety kit.</p>
-                <p>$120/month</p>
-                <p>Tuesdays and Thursdays, 4-5pm</p>
+                    Equipment will be provided with exception of safety kit.</p><br>
+                <p>$120/month</p><br>
+                <p>Tuesdays and Thursdays, 4-5pm</p><br>
                 <p>A101 or recommendation from private lesson instructor. Minimum age 7 years old.</p>
             </article>
             <article>
@@ -49,47 +54,68 @@
                     class focuses on a continued education towards tournament styles of shooting used by many archery
                     tournament associations from around the world. Along with the tournament lesson, participants
                     receive continued knowledge around their shooting form and advice on personal equipment selections.
-                    Equipment will be provided with exception of safety kit.</p>
-                <p>$120/month</p>
-                <p>Tuesdays and Thursdays, 5-6pm</p>
+                    Equipment will be provided with exception of safety kit.</p><br>
+                <p>$120/month</p><br>
+                <p>Tuesdays and Thursdays, 5-6pm</p><br>
                 <p>A101/A102 or equivalent. Minimum age 7 years old.</p>
             </article>
         </section>
         <section>
-            <h2>Private Lessons</h2>
-            <article>
-                <h3>Single Lesson</h3>
-                <p>1 hour of expert guidance by a USA Archery-certified coach</p>
-                <p>$50</p>
-            </article>
-            <article>
-                <h3>3 Lesson Package</h3>
-                <p>3 lessons, 1 hour each of expert guidance by a USA Archery-certified coach/p>
-                <p>$140</p>
-            </article>
-            <article>
-                <h3>10 Lesson Package</h3>
-                <p>10 lessons, 1 hour each of expert guidance by a USA Archery-certified coach</p>
-                <p>$380</p>
-            </article>
+            <h2>PRIVATE LESSONS</h2>
+            <div class="class-section flex">
+                <article>
+                    <h3>Single Lesson</h3>
+                    <p>1 hour of expert guidance by a USA Archery-certified coach</p><br>
+                    <p>$50</p>
+                </article>
+                <article>
+                    <h3>3 Lesson Package</h3>
+                    <p>3 lessons, 1 hour each of expert guidance by a USA Archery-certified coach</p><br>
+                    <p>$140</p>
+                </article>
+                <article>
+                    <h3>10 Lesson Package</h3>
+                    <p>10 lessons, 1 hour each of expert guidance by a USA Archery-certified coach</p><br>
+                    <p>$380</p>
+                </article>
+            </div>
         </section>
+        <div class="video-box">
+            <div class="video-content">
+                <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                    <source src="/videos/Archery_1.mp4" type="video/mp4">
+                    Your browser does not support this video
+                </video>
+                <p>
+                    <cite><a href="https://www.youtube.com/watch?v=m7Q-NyQ-iA0">Credit text:</a> 3D animation
+                        video by Quince Creative - <a href="https://quincemedia.com">https://quincemedia.com</a></cite>
+                </p>
+            </div>
+        </div>
     </main>
     <footer>
-        <img src="images/archeryAcademy-logo-white.png" alt="White archery logo">
-        <div>
-        <a href="about.html">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Lessons</a>
-        <p>2018 Archery Academy | Seattle, WA</p>
+        <div class="footer-image grid-container">
+
         </div>
-        <div>
+        <div class="footer-container">
+        <div class="footer-nav">
+            <a href="about.html">About</a> /
+            <a href="#">Contact</a> /
+            <a href="#">Lessons</a>
+            <p>2018 Archery Academy | Seattle, WA</p>
+        </div>
+        <div class="address">
             <p>528 Nock Point Ln</p>
             <p>Tacoma, WA 98412</p>
         </div>
-        <div>
-            <p>Next Step Archery admits students of any race, gender presentation, sexuality, religion, national origin or ethnic origin to all rights, privileges, programs and activities available to students at the school. We do not discriminate in administration of our educational policies, admission policies and other school administered programs. All students are welcome and valuable members of our community.
+        <div class="footer-content">
+            <p>Next Step Archery admits students of any race, gender presentation, sexuality, religion, national origin
+                or ethnic origin to all rights, privileges, programs and activities available to students at the school.
+                We do not discriminate in administration of our educational policies, admission policies and other
+                school administered programs. All students are welcome and valuable members of our community.
             </p>
         </div>
+    </div>
     </footer>
 </body>
 
