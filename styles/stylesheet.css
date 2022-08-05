@@ -149,16 +149,6 @@ section h2 {
     position: relative;
 }
 
-.video-content:before {
-    content: "";
-    position: absolute;
-    width: 270px;
-    height: 115px;
-    background: url(../images/archeryAcademy-logo-white.png);
-    left: 100px;
-    bottom: 100px;
-}
-
 .video-content video {
     width: 100%;
 }
